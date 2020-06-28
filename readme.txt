@@ -27,7 +27,13 @@ git init
 git config --global user.name irohasu
 git config --global user.email test@test.com
 
+git status
+git add --all .
+git commit -m "[コミットメッセージ]"
+git remote add origin https://github.com/ilohasu/my-first-blog.git
+git push -u origin master
 
+9183e93b4f8d6fe0564fa7c8df896a598d6d6126
 -------------------------------
 
 

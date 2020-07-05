@@ -1,10 +1,12 @@
 {% load static %}
+{% load blog %}
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>{% block meta_title %}いろはす日記（パクリ）{% endblock %}</title>
+    <title>{% block meta_title %}いろはす日記{% endblock %}</title>
    <meta name="description" content="{% block meta_description %}Djangoの勉強のためにサイトをパクってきました。{% endblock %}">
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400&display=swap" rel="stylesheet">
@@ -23,30 +25,17 @@
 
 <footer id="site-footer">
     <div class="container" id="footer-container">
-        <ul>
-            <li>
-                <a href="#">2020</a>
-                <ul>
-                    <li><a href="#">12</a></li>
-                </ul>
-            </li>
-        </ul>
+        {% render_month_links %}
+
+        {% render_category_links %}
 
         <ul>
-            <li><a href="#">雑談(2)</a></li>
+            <li><a href="a" target="_blank">Twitter</a></li>
+            <li><a href="a" target="_blank">Github</a></li>
         </ul>
 
-        <ul>
-            <li><a href="https://twitter.com/toritoritorina/" target="_blank">Twitter</a></li>
-            <li><a href="https://github.com/naritotakizawa/" target="_blank">Github</a></li>
-        </ul>
+        {% render_search_form request %}
 
-        <form action="" method="GET">
-            <div class="field">
-                <input type="text" name="key_word" id="id_key_word">
-                <button type="submit" id="search" class="search-btn"></button>
-            </div>
-        </form>
     </div>
 </footer>
 

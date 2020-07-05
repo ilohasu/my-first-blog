@@ -17,10 +17,9 @@ django-admin startproject (プロジェクト名) .
 アプリケーション作成
 python manage.py startapp (アプリケーション名)
 
+
+python manage.py makemigrations
 python manage.py migrate
-python manage.py makemigrations blog
-python manage.py migrate blog
-python manage.py createsuperuser
 
 # 管理するファイルまたはアプリケーションのディレクトリで行う
 git init

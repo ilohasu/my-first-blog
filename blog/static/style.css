@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+}
+
+html {
+  background-color: #f5f5f5;
+}
+
+body {
+  line-height: 1;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ヘッダー */
+#site-header {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #3E637D;
+  color: #fff;
+}
+
+p#title {
+  font-size: 40px;
+  color: #fff;
+  margin: 16px 0;
+}
+
+p#subtitle {
+  color: #fff;
+}
+
+img#hero {
+  width: 200px;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+/* ユーティリティー */
+.container {
+  padding: 0 8px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 32px;
+    box-sizing: border-box;
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1366px) {
+  .container {
+    width: 1366px;
+  }
+}
+
+
+/* フッター */
+#site-footer {
+  padding: 32px 0;
+  background-color: #3E637D;
+}
+
+#site-footer ul {
+  list-style-type: none;
+}
+
+#site-footer a {
+  color: #fff;
+}
+
+#site-footer a:hover {
+  opacity: 0.5;
+}
+
+#footer-container > * {
+  margin-bottom: 32px;
+}
+
+#footer-container > ul {
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  #footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
